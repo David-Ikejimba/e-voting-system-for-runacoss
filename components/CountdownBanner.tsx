@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 
 interface CountdownBannerProps {
-  status: 'upcoming' | 'active'
+  status: string
   startTime: string | null
   endTime: string | null
 }
@@ -12,6 +12,7 @@ export default function CountdownBanner({ status, startTime, endTime }: Countdow
   const [timeLeft, setTimeLeft] = useState<string | null>(null)
 
   useEffect(() => {
+    if (status !== 'upcoming' && status !== 'active') return
     const targetDateStr = status === 'upcoming' ? startTime : endTime
     if (!targetDateStr) return
 
@@ -51,7 +52,7 @@ export default function CountdownBanner({ status, startTime, endTime }: Countdow
     return () => clearInterval(interval)
   }, [status, startTime, endTime])
 
-  if (!timeLeft) return null
+  if (!timeLeft || (status !== 'upcoming' && status !== 'active')) return null
 
   const bgStyle = status === 'active' 
     ? { background: 'rgba(239, 68, 68, 0.1)', color: 'var(--brand-danger)', borderTop: '1px solid rgba(239, 68, 68, 0.2)' } 
