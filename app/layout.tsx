@@ -21,7 +21,7 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'RUN Votes — Redeemer\'s University Elections',
+  title: 'RUNACOSS VOTING — Redeemer\'s University Elections',
   description: 'Secure online voting platform for Redeemer\'s University of Nigeria students.',
   manifest: '/manifest.json',
 }

@@ -43,8 +43,8 @@ export default function VerifyPage() {
     <div className="auth-page">
       <div className="auth-card" style={{ maxWidth: 450 }}>
         <div className="auth-logo">
-          <Image src="/logo.png" alt="RUN Votes Logo" width={48} height={48} />
-          <span className="auth-logo-text">RUN Votes</span>
+          <Image src="/logo.png" alt="RUNACOSS VOTING Logo" width={48} height={48} />
+          <span className="auth-logo-text">RUNACOSS VOTING</span>
         </div>
 
         <h1 className="auth-title">Verify Receipt</h1>

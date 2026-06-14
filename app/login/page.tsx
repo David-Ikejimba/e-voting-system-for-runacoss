@@ -99,8 +99,8 @@ function LoginInner() {
       )}
       <div className="auth-card">
         <div className="auth-logo">
-          <Image src="/logo.png" alt="RUN Votes Logo" width={48} height={48} />
-          <span className="auth-logo-text">RUN Votes</span>
+          <Image src="/logo.png" alt="RUNACOSS VOTING Logo" width={48} height={48} />
+          <span className="auth-logo-text">RUNACOSS VOTING</span>
         </div>
 
         <h1 className="auth-title">Welcome back</h1>

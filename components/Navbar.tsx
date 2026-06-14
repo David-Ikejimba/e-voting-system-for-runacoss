@@ -37,8 +37,8 @@ export default function Navbar({ profile }: NavbarProps) {
   return (
     <nav className="navbar">
       <Link href="/dashboard" className="nav-logo">
-        <Image src="/logo.png" alt="RUN Votes Logo" width={32} height={32} />
-        <span>RUN Votes</span>
+        <Image src="/logo.png" alt="RUNACOSS VOTING Logo" width={32} height={32} />
+        <span>RUNACOSS VOTING</span>
       </Link>
 
       <div className="nav-actions desktop-actions">
