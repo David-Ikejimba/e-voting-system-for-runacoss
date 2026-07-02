@@ -417,8 +417,8 @@ export default function ElectionDetailClient({
                         </div>
                       ) : (
                         <label htmlFor="candidate-photo-input" className="ed-photo-dropzone">
-                          <span style={{ fontSize: '1.5rem' }}>📷</span>
-                          <span>Click to upload photo</span>
+                          <span style={{ fontSize: '1.5rem' }}>+</span>
+                          <span>Upload Photo</span>
                         </label>
                       )}
                     </div>

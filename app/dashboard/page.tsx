@@ -67,7 +67,7 @@ export default async function DashboardPage() {
 
         {activeElections.length === 0 && upcomingElections.length === 0 && concludedElections.length === 0 && (
           <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
-            <p style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🗳️</p>
+            <p style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}></p>
             <h2>No elections yet</h2>
             <p>There are no elections scheduled for your department right now. Check back soon.</p>
           </div>
@@ -104,7 +104,7 @@ export default async function DashboardPage() {
 
                     {alreadyVoted ? (
                       <div className="receipt-box" style={{ marginBottom: '1.5rem' }}>
-                        🧾 Receipt: {votedMap.get(e.id)}
+                        Receipt: {votedMap.get(e.id)}
                       </div>
                     ) : (
                       <div className="election-card-footer" style={{ marginBottom: '1.5rem' }}>
@@ -160,7 +160,7 @@ export default async function DashboardPage() {
                       <span className="badge badge-concluded">Concluded</span>
                     </div>
                     {voted && (
-                      <div className="receipt-box">🧾 Receipt: {votedMap.get(e.id)}</div>
+                      <div className="receipt-box">Receipt: {votedMap.get(e.id)}</div>
                     )}
                   </div>
                 )

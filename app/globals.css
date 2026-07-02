@@ -1,7 +1,7 @@
 /* ─── Design Tokens (Civic Utilitarian) ─────────────────────── */
 :root {
-  --font-heading: var(--font-space), monospace;
-  --font-body: var(--font-dm), sans-serif;
+  --font-heading: var(--font-inter), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
 
   /* Light Theme Colors */
   --bg-base: #F4F4F0;

@@ -34,7 +34,7 @@ export default async function ProfilePage() {
             <div>
               <h1 style={{ marginBottom: '0.25rem' }}>{profile.full_name}</h1>
               <p style={{ margin: 0, fontFamily: 'var(--font-heading)', textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 700 }}>
-                {profile.role === 'admin' ? '🛡️ Admin' : '🎓 Student'}
+                {profile.role === 'admin' ? 'Admin' : 'Student'}
               </p>
             </div>
           </div>

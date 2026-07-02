@@ -147,11 +147,11 @@ export default function AdminDashboardClient({
     if (!error) setTurnoutSeries(data)
   }
 
-  const navItems: { key: AdminTab; label: string; icon: string }[] = [
-    { key: 'elections', label: 'Elections', icon: '📋' },
-    { key: 'turnout', label: 'Turnout', icon: '📊' },
-    { key: 'results', label: 'Results', icon: '🏆' },
-    { key: 'logs', label: 'Audit Logs', icon: '🛡️' },
+  const navItems: { key: AdminTab; label: string }[] = [
+    { key: 'elections', label: 'Elections' },
+    { key: 'turnout', label: 'Turnout' },
+    { key: 'results', label: 'Results' },
+    { key: 'logs', label: 'Audit Logs' },
   ]
 
   const concludedElections = elections.filter(e => e.status === 'concluded')
@@ -176,7 +176,6 @@ export default function AdminDashboardClient({
             className={`admin-nav-item ${tab === item.key ? 'active' : ''}`}
             onClick={() => setTab(item.key)}
           >
-            <span>{item.icon}</span>
             {item.label}
           </button>
         ))}
@@ -253,7 +252,7 @@ export default function AdminDashboardClient({
             {/* Elections Grid */}
             {elections.length === 0 ? (
               <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
-                <p style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📋</p>
+
                 <h2>No elections yet</h2>
                 <p>Create your first election to get started.</p>
               </div>
@@ -395,7 +394,7 @@ export default function AdminDashboardClient({
                           border: '2px solid var(--border-default)',
                         }}>
                           <span style={{ fontWeight: i === 0 ? 700 : 400 }}>
-                            {i === 0 ? '🏆 ' : ''}{r.candidate_name}
+                            {r.candidate_name}
                           </span>
                           <span style={{ fontWeight: 700 }}>
                             {r.vote_count} votes

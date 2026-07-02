@@ -1,18 +1,12 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk, DM_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import PwaRegistry from '@/components/PwaRegistry'
 import './globals.css'
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-space',
-  display: 'swap',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-dm',
+  variable: '--font-inter',
   display: 'swap',
 })
 
@@ -32,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable}`}>
       <body>
         <ThemeProvider
           attribute="class"
